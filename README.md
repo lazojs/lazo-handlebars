@@ -15,7 +15,7 @@ define(['lazoApp', 'app/lazo-handlebars/index'], function (LazoApp, lazoHandleba
     LazoApp.extend({
 
         initialize: function (callback) {
-            this.registerTemplateEngine('handlebars', 'hbs', lazoHandlebars, 'app/lazo-handlebars/index');
+            this.registerTemplateEngine('handlebars', 'hbs', lazoHandlebars);
             callback();
         }
 
