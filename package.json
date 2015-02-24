@@ -1,0 +1,58 @@
+{
+  "name": "lazo-handlebars",
+  "description": "Merges application dependencies configurations.",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "keywords": [
+    "lazojs",
+    "handlebars"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/lazojs/lazo-handlebars/blob/master/LICENSE"
+    }
+  ],
+  "author": {
+    "name": "Jason Strimpel",
+    "email": "jstrimpel@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/lazojs/lazo-handlebars/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lazojs/lazo-handlebars.git"
+  },
+  "github": "https://github.com/lazojs/lazo-handlebars",
+  "scripts": {
+    "test": "gulp ci",
+    "postinstall": "node ./install.js"
+  },
+  "maintainers": [
+    {
+      "name": "Jason Strimpel",
+      "email": "jstrimpel@gmail.com"
+    }
+  ],
+  "devDependencies": {
+    "gulp": "3.8.8",
+    "gulp-mocha": "1.0.0",
+    "chai": "1.9.1",
+    "fs-extra": "0.16.3",
+    "requirejs": "2.1.16"
+  },
+  "dependencies": {
+      "handlebars": "3.0"
+  },
+  "lazo": {
+    "common": true,
+    "dependencies": {
+      "handlebars": [{
+        "install": "common",
+        "moduleId": "handlebars",
+        "main": "dist/handlebars.amd"
+      }]
+    }
+  }
+}
